@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scenes/Tile.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Flag_of_Canada.png" type="Texture" id=2]
+
+[node name="Tile" instance=ExtResource( 1 )]
+
+[node name="Brazil" parent="CollisionShape2D" index="0"]
+visible = false
+
+[node name="Flag_of_Canada" type="Sprite" parent="." index="2"]
+position = Vector2( -1.31853, 1.1468 )
+scale = Vector2( 0.0334136, 0.0369751 )
+texture = ExtResource( 2 )

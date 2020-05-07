@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://russia.jpg" type="Texture" id=1]
+[ext_resource path="res://Scenes/Tile.tscn" type="PackedScene" id=2]
+
+[node name="Tile" instance=ExtResource( 2 )]
+
+[node name="Brazil" parent="CollisionShape2D" index="0"]
+visible = false
+
+[node name="russia" type="Sprite" parent="." index="2"]
+position = Vector2( -0.0160017, -0.00396049 )
+scale = Vector2( 0.0628143, 0.0473578 )
+texture = ExtResource( 1 )

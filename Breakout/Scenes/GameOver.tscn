@@ -1,0 +1,43 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Scripts/GameOver.gd" type="Script" id=1]
+[ext_resource path="res://Scenes/maxresdefault.jpg" type="Texture" id=2]
+
+[node name="GameOver" type="Node2D"]
+script = ExtResource( 1 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 176.0
+margin_top = 168.0
+margin_right = 848.0
+margin_bottom = 328.0
+color = Color( 0.286275, 0.313726, 0.341176, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="maxresdefault" type="Sprite" parent="ColorRect"]
+position = Vector2( 466.031, 197.899 )
+texture = ExtResource( 2 )
+
+[node name="Button" type="Button" parent="."]
+margin_left = 608.448
+margin_top = 404.127
+margin_right = 800.448
+margin_bottom = 452.127
+text = "Play Again?"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Button"]
+margin_left = -420.197
+margin_top = 3.3587
+margin_right = 603.803
+margin_bottom = 59.3587
+text = "You Died"
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Button" to="." method="_on_Button_pressed"]
